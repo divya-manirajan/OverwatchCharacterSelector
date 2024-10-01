@@ -1,0 +1,123 @@
+
+
+div{
+    text-align: center;
+}
+p{
+    color: black;
+    font-family: "Gill Sans", sans-serif;    
+    font-size: 15x;
+}
+label{
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    margin: 2px;
+    padding: 10px;
+    font-family: "Gill Sans", sans-serif;    
+    font-size: 20px;
+    transition-duration: .4s;
+
+}
+.unselected{
+    background-color: rgb(42, 180, 102);
+}
+.selected{
+    background-color: rgb(81, 49, 196);
+}
+label:hover:not(.SelectLabel) {
+    filter: brightness(90%);
+}
+.SelectBTN{
+    background-color: rgb(0, 208, 208);
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    width:auto;
+    font-family: "Gill Sans", sans-serif;    
+    font-size: 20px;
+}
+
+.SelectLabel{
+    background-color: rgb(0, 208, 208);
+    color: white;
+    width: auto;
+    font-family: "Gill Sans", sans-serif;    
+    font-size: 20px;
+    transition:none;
+}
+.SelectBTN:hover{
+    filter: brightness(90%);
+}
+.CharacterLabels{
+    float: left;
+    width:75%
+}
+
+.title{
+    float: left;
+    width:75%
+}
+
+.CharacterSelector{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width:25%;
+    height: 500px
+}
+
+.typeTitle{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.allSelect{
+    background-color: rgb(51, 88, 255);
+    color: white;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 5px;
+    font-family: "Gill Sans", sans-serif;    
+    font-size: 20px;
+    transition-duration: .4s;
+}
+.allSelect:hover{
+    filter: brightness(90%);
+}
+
+.allUnselect{
+    background-color: red;
+    color: white;
+    width: auto;
+    font-family: "Gill Sans", sans-serif;    
+    font-size: 20px;
+    transition-duration: .4s;
+}
+.allUnselect:hover{
+    filter: brightness(90%);
+}
+
+@media (max-width: 800px) {
+    
+    .CharacterSelector {
+        width: 100%;
+        height: auto;       
+    }
+    .SelectBTN{
+        margin: 5px;
+    }
+    .CharacterLabels {
+        width: 100%; /* Adjust width to full screen for mobile */
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
